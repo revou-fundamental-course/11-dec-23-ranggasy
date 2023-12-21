@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/11-dec-23-ranggasy/css/style.css"/>
+    <title>Gaston Day School</title>
+  </head>
+  <body>
+
+  <!-- ....................Start Nav Bar.................... -->
+    <nav>
+      <img src="/11-dec-23-ranggasy/assets/schoollogo.png" alt="logo" class="logo">
+      <h2>Gaston Day School</h2>
+      <ul class="hidden" id="navbar">
+        <a href="#" class="nav-item home" id="home">Home</a>
+        <a href="#our-profile" class="nav-item" id="ourProfile">Our Profile</a>
+        <a href="#Achievement" class="nav-item" id="achievements">Achievement</a>
+        <a href="#message-us" class="nav-item message" id="message">Message Us</a>
+      </ul>
+    </nav>
+    <!-- ....................End Nav Bar.................... -->
+
+  <!-- ....................Start Header Section.................... -->
+    <header>
+      <h1>Hi, Welcome To Gaston Day School</h1>
+      <h4>Building Brighter Futures, One Student at a Time"</h4>
+      <img src="/11-dec-23-ranggasy/assets/school.jpg" alt="school" class="school"/>
+    </header>
+  <!-- ....................End Header Section.................... -->
+    
+  <!-- ....................Start Our-Profile Section.................... -->
+    <section class="our-profile" id="our-profile">
+      <h2>Our Profile</h2>
+      <div class="list-profile">
+        <div class="profile">
+          <img src="/11-dec-23-ranggasy/assets/canteen.jpg" alt="canteen"/>
+          <p>Canteen</p>
+        </div>
+
+        <div class="profile">
+          <img src="/11-dec-23-ranggasy/assets/Basketball.jpg" alt="BasketBall"/>
+          <p>BasketBall Court</p>
+        </div>
+
+        <div class="profile">
+          <img src="/11-dec-23-ranggasy/assets/library.jpg" alt="library" />
+          <p>Library</p>
+        </div>
+
+        <div class="profile">
+          <img src="/11-dec-23-ranggasy/assets/school-class.jpg" alt="class"/>
+          <p>Classroom</p>
+        </div>
+      </div>
+    </section>
+  <!-- ....................End Our-Profile Section.................... -->
+
+  <!-- ....................Start Achievement Section.................... -->
+  <section class="Achievement" id="Achievement">
+    <h2>Achievement</h2>
+    <div class="container achievement-container">
+      <div class="achievement">
+        <img src="/11-dec-23-ranggasy/assets/ScholarshipAwardWinners.png">
+        <h3>Achievement 1</h3>
+        <div class="header-action-aria">
+        </div>
+      </div>
+      <div class="achievement">
+        <img src="/11-dec-23-ranggasy/assets/studentawards.jpg">
+        <h3>Achievement 2</h3>
+        <div class="header-action-aria">
+        </div>
+      </div>
+      <div class="achievement">
+        <img src="/11-dec-23-ranggasy/assets/Achievement3.png">
+        <h3>Achievement 3</h3>
+        <div class="header-action-aria">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ....................End Achievement Section.................... -->
+
+  <!-- ....................Start Message Us Section.................... -->
+
+    <section class="message" id="message-us">
+      <h2>Message Us</h2>
+      <div class="message-us">
+        <form name="message-form" onsubmit="return validateForm()">
+          <table>
+            <tr>
+              <td class="col-1"><p>Nama</p></td>
+              <td class="col-2"><p>:</p></td>
+              <td class="col-3">
+                <input id="name"type="text" placeholder="Nama"name="name" required/>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-1"><p>Tanggal Lahir</p></td>
+              <td class="col-2"><p>:</p></td>
+              <td class="col-3">
+                <input type="date" name="tanggal" id="date" nama="tanggal" required/>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-1"><p>Jenis Kelamin</p></td>
+              <td class="col-2"><p>:</p></td>
+              <td class="col-3">
+                <input id="jk" type="radio" value="Laki-laki" class="jenis-kelamin" name="gender" required/>
+                <p>Laki-laki</p>
+                <input id="jk" type="radio" value="Perempuan" class="jenis-kelamin" name="gender" required/>
+                <p>Perempuan</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-1" style="vertical-align: top"><p>Pesan</p></td>
+              <td class="col-2" style="vertical-align: top"><p>:</p></td>
+              <td class="col-3">
+                <textarea id="pesan" name="message-from" cols="46" rows="10" required></textarea>
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="submit" class="submit-btn" id="submit"/>
+        </form>
+        <div class="return" id="return">
+          <div class="returnText" id="returnText">
+            <p class="point">Current time : <span id="time-api"></span></p>
+            <br />
+            <p class="point">Nama : <span id="sender-name"></span></p>
+            <p class="point">
+              Tanggal Lahir : <span id="sender-birth-date"></span>
+            </p>
+            <p class="point">
+              Jenis Kelamin : <span id="sender-gender"></span>
+            </p>
+            <p class="point">Pesan : <span id="sender-message"></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- ....................End Message Us Section.................... -->
+  <!-- ....................Start Footer Section.................... -->
+  <footer>
+    <p>&copy; Copyright By Rangga || All Rights Reserved.</p>
+  </footer>
+  <!-- ....................End Footer Section.................... -->
+
+    <!-- Java Script -->
+    <script src="/11-dec-23-ranggasy/js/script.js"></script>
+  </body>
+</html>
